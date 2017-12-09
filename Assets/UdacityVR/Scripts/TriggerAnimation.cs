@@ -10,12 +10,24 @@ public class TriggerAnimation : MonoBehaviour
 	public Animator animator;
 	[Tooltip ("The name of the Animator trigger parameter")]
 	public string triggerName;
+    public bool currentState =false;
 
-	void Update ()
+    private void Start()
+    {
+        animator.SetBool(triggerName, false);
+    }
+    void Update ()
 	{
-		// If the player pressed the cardboard button (or touched the screen), set the trigger parameter to active (until it has been used in a transition)
-		if (Input.GetMouseButtonDown (0)) {
-			animator.SetTrigger (triggerName);
-		}
-	}
+        // If the player pressed the cardboard button (or touched the screen), set the trigger parameter to active (until it has been used in a transition)
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetBool(triggerName, !currentState);
+            currentState = !currentState;
+        }
+    }
+
+    public void updateAnimation()
+    {
+        
+    }
 }

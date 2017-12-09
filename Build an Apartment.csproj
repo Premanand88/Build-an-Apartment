@@ -197,6 +197,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\UdacityVR\Scripts\animateClock.cs" />
     <Compile Include="Assets\UdacityVR\Scripts\Extras\Teleporter.cs" />
     <Compile Include="Assets\UdacityVR\Scripts\HeadRotation.cs" />
     <Compile Include="Assets\UdacityVR\Scripts\TriggerAnimation.cs" />
